@@ -54,25 +54,3 @@ def simple_iteration(fholder, a, b, e, max_iter):
         x0 = x1
     print("Error: достигнуто макс. кол-во операций")
     return None
-
-
-# def simple_iteration(fholder, a, b, e, max_iter ):
-#     print("Метод простой итерации")
-#     df = fholder.df(a)
-#     for x in np.linspace(a, b, 100):
-#         df = max(df, abs(fholder.df(x)))
-#     if df >= 1:
-#         print("Не выполнено дост. усл. сх. на [{}, {}]!".format(a, b))
-#     elif fholder.f(a) * fholder.f(b) > 0:
-#         print("Функция не меняет знак на [{}, {}]!".format(a, b))
-#     else:
-#         print("Условия сходимости выполнены на [{}, {}]".format(a, b))
-#
-#     phi = lambda x: x - fholder.f(x) / fholder.df(x)  # определяем phi как функцию x - f(x) / f'(x)
-#     for i in range(max_iter):
-#         x1 = phi(x0)
-#         if abs(x1 - x0) < e:
-#             return x1, i + 1
-#         x0 = x1
-#     print("Error: достигнуто макс. кол-во операций")
-#     return None

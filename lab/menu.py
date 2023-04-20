@@ -6,8 +6,7 @@ import FunctionHolder
 
 
 def main():  # START input
-    auto_mode = True
-    # TODO auto_mode = input("включить ввод из файла? Y/N ") == 'Y'
+    auto_mode = input("включить ввод из файла? Y/N ") == 'Y'
     if auto_mode:
         menu = FMenu()
         a, b, e = menu.choose_file()
